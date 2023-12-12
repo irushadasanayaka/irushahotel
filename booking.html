@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width-divice-width, initial-scale=1">
+<link rel="stylesheet" href="web.css">
+<script src="main.js" defer></script>
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+</head>
+<body id="background">
+    <header class="header">
+        <nav class="nav">
+            <div class="logo"><img src="images/Logo.png" alt="logo" width="120px" height="110px"></div>
+            <ul class="navlist">
+                <li><a href="index.html"><h2>Home</h2></a></li>
+                <li><a href="hotelbranch.html"><h2>Branches</h2></a></li>
+                <li><a href="Adventure.html"><h2>Adventure</h2></a></li>
+                <li><a href="resturant.html"><h2>Restaurent</h2></a></li>
+                <li><a href="booking.html"><h2>Booking</h2></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="imagecontainer">
+            <img src="images/rome.jpg" alt="mainimg">
+        </div>
+        <div class="imagetext">
+            <h2>Booking the Hotels.</h2>
+        </div>
+        
+        <section>
+            <p id="text">
+                    Views and Sizes of Hotel Rooms  
+            </p>
+            
+            <div class="view-flex">
+                <img src="images/deluxe-pool.webp" alt="view1">
+                <img src="images/gallery_garden-room-king.jpg" alt="view2">
+                <img src="images/Ocean-View-Room-1-1170x780.jpg" alt="view3">
+            </div>
+        </section><br>
+        <section>
+            <form class="from2">
+                <fieldset>
+                    <legend>User Deatails</legend>
+                    <div>
+                        <label for="fname">First name</label>
+                        <input type="text" name="name" max="20">
+                    </div>
+                    <div>
+                        <label for="lname">Last name</label>
+                        <input type="text" name="name" max="20">
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email"> 
+                    </div>
+                    <div>
+                        <label for="num">Phone number</label>
+                        <input type="text" name="number">
+                    </div>
+                    
+                </fieldset>
+            </form>
+        </section>
+        <section>
+            <form class="form">
+                <div class="booking-form">
+                    <p>
+                        <fieldset>
+                            <label for="hotel">Please Select the Hotel</label>
+                            <select id="hotel" >
+                            <option value="milan">Milan</option>
+                            <option value="rome">Rome</option>
+                            <option value="venice">Venice</option>
+                            </select> 
+                        </fieldset> 
+                    </p>
+                    <fieldset>
+                        <legend>Hotel room</legend>
+                    <p>
+                         <label for="rooms">Select the number of rooms</label>
+                         <input type="number" id="room-no" name="room-no" value="0" min="0" max="10" required>
+                       
+                        
+                    </p>
+                    <p>
+                        
+                            <label for="roomsize">Select the size of the room</label>
+                            <select id="roomsize" name="roomsize" required>
+                                <option value="none" selected>Select</option>
+                                <option value="single">Single</option>
+                                <option value="double">Double</option>
+                                <option value="triple">Triple</option>
+                            </select> 
+                       
+                    </p>
+                    <p>
+                        <label for="extraroom">Do you need an extra Bed (8000 LKR)</label>
+                        <select id="extrabed" name="extrabed" required>
+                            <option value="no">No</option>
+                            <option value="yes">Yes</option>
+                        </select>
+                    </p>
+                    </fieldset>
+                    <p>
+                        <fieldset>
+                            <legend>Number of Adults and Kids</legend>
+                            <p>
+                       
+                                <label for="rooms">Enter the numbr of Adults</label>
+                                <input type="number" id="adults" name="adults" value="0" min="0" max="10" required>
+                          
+                            
+                        </p>
+                        <p>
+                           
+                                <label for="rooms">Enter the numbr of kids</label>
+                                <input type="number" id="kids"  value="0" min="0" max="10" >
+                           
+                            
+                        </p>
+                        <p>
+                           
+                            <label for="rooms">Extra Meals for kids above 5 (5000 LKR)</label>
+                            <input type="number" id="kidsmeal" name="kidsmeal" value="0" min="0" max="10" >
+                       
+                        
+                    </p>
+                        </fieldset>
+                    </p>
+                    <p>
+                        <fieldset>
+                            <legend>Checkin and Checkout</legend>
+                            <p>
+                                <label for="checkin">Please select the Checkin Date</label>
+                                <input type="date" id="checkindate" required>
+                            </p>
+                            <p>
+                                <label for="time">Please select the Checkin time</label>
+                                <input type="time" id="checkintime" required>
+                            </p>
+                            <p>
+                                <label for="duration">Please select the Duration of staying</label>
+                                <input type="number" id="checkduration" name="checkduration" value="0" min="0" max="10" required>
+                            </p>
+                        </fieldset>
+                    </p>
+                    <p>
+                        <fieldset>
+                            <legend>Extra requeirments as you want</legend>
+                            <p>
+                                <label for="view">The view of hotel room</label>
+                                <select id="view">
+                                    <option id="pool">Pool</option>
+                                    <option id="garden">Garden</option>
+                                    <option id="beachside">Beach Side</option>
+                                </select>
+                            </p>
+                            <p>
+                                <label for="wifi">Wifi</label>
+                                <input type="checkbox" id="wifi>">
+                            </p>
+                        </fieldset>
+                    </p>
+                    
+                    <p>
+                        <input type="reset" value="reset" id="resetbtn">
+                    </p>
+               </div>
+            </form>
+
+                       
+        </section>
+
+<!-- adventure form -->
+
+        <section>
+            <p id="text">
+                Booking the Adventures
+            </p>
+        </section>
+        <section>
+            <form class="from2" >
+                <div class="booking-form">
+                    
+                     <p>
+                        <fieldset>
+                            <legend>Type of tourist</legend>
+                                    <p>
+                                        <label for="local">Local or Foregin</label>
+                                        <select id="type" name="type">
+                                            <option value="local" id="local">Local</option>
+                                            <option value="foregin" id="foregin">Foregin</option>
+                                        </select>       
+                                    </p>
+                        </fieldset>
+                     </p>
+                     <p>
+                        <fieldset>
+                            <legend>Number of Adults and Kids</legend>
+                            <p>
+                       
+                                <label for="rooms">Enter the numbr of Adults</label>
+                                <input type="number" id="adults2" name="adults2" value="0" min="0" max="10" required>
+                            </p>
+                            <p>
+                           
+                                <label for="rooms">Enter the numbr of Kids above 5</label>
+                                <input type="number" id="kids2" name="kids2" value="0" min="0" max="10" required>
+                            </p>
+                            <p>
+                                <label for="gkids">Time duration (1hr - adl 5000 / kids 2000)</label>
+                                <input type="number" id="duration2" name="duration2" value="0" min="0" max="10">
+                            </p>
+                        </fieldset>
+                    </p>
+
+                    <p>
+                        <fieldset>
+                            <legend>Guidance for diving</legend>
+                            <p>
+                                <label for="gadults">Guidance for Adults (1000 LKR)</label>
+                                <input type="checkbox" id="gadults">
+                            </p>
+                            <p>
+                                <label for="gkids">Guidance for Kids (500 LKR)</label>
+                                <input type="checkbox" id="gkids" >
+                            </p>
+                            
+                            
+                        </fieldset>
+                    </p>
+                    <p>
+                        <fieldset>
+                            <legend>Current Cost</legend>
+                            <p id="current"></p>
+                        </fieldset>
+                    </p>
+                    <p>
+                        <fieldset>
+                            <p>
+                                <label for="promo">Enter the promo code get discount</label>
+                                <input type="text" id="promo" max="20">
+                            </p>
+                        </fieldset>
+                    </p>
+                    <p>
+                        <input type="reset" value="Book Adventure" id="submitbtn2">
+                    </p>
+                    
+                    <p id="output2"></p>
+                    
+                    <p> 
+                        <input type="reset" value="Book now" id="submitbtn">
+                    </p>
+                    <p id="output"></p> 
+                    <p>
+                        <input type="button" value="Check loyalty points" id="loyaltybtn"> 
+                        <div id="btn">
+                            <input type="button" value=" Add to favourite" id="favourite">
+                            <input type="button" value=" Show favourite" id="shfavourite">
+                        </div>
+                    </p>        
+                            
+                </div>
+                
+            </form>
+    
+        </section>
+
+
+
+
+
+        </main><br><br>
+        <footer class="footer">
+            <section class="footer">
+            For more information please contact :
+        <div class="footer-nav">      
+            <h3>Call:+39 334 6677 23</h3>
+            <h3>Email = hotelparadies@gmail.com</h3>
+        </div>
+        </section>
+        <section class="footer2">
+            <h2 id="center">Follow us on</h2>
+            <div class="footer-nav">
+                <img class="logo2" src="images/WhatsApp.svg.png" alt="whatsapp-logo"> : +39 334 6677 23
+                <img class="logo2" src="images/insta logo.png" alt="intalogo"> : hotel_paradies
+                <img class="logo2" src="images/twitter.webp" alt="x"> :hotelparadies
+            </div>
+        </section>
+
+             <!-- Refferencing -->
+             <!-- FodorsTravel.(2022) 40 Ultimate Things to Do in Rome.[online]. Available from:https://www.fodors.com/world/europe/italy/rome/experiences/news/photos/25-ultimate-things-to-do-in-rome-->
+             <!-- TOPUNIVERSITIES (2022) Study in Milan.(online). Available from:https://www.topuniversities.com/university-rankings-articles/qs-best-student-cities/milan -->
+             <!-- Italy Mamma Mia (2022) The Best Luxury Hotels in Venice.[online]. Available from:https://www.italymammamia.com/luxury-hotels-in-venice.html -->
+             <!-- freepic.com (2020) Whatsapp Logo Images.[online].  Available from:https://www.freepik.com/free-photos-vectors/whatsapp-logo.[Accessed date: 10th Agust]. -->
+             <!--  freepic.com (2020) Instergramm Logo Images.[online].  Available from: https://www.freepik.com/search?format=search&query=Instergramm.[Accessed date: 10th Agust]. -->
+             <!-- freepic.com (2020) Twitter Logo Images.[online].  Available from: https://www.freepik.com/search?format=search&query=Twitter%20.[Accessed date: 10th Agust]. -->
+             
+
+    </footer>
+</body>
